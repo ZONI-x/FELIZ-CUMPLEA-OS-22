@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Un video para ti ❤️</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .video-page {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px 15px;
+        }
+
+        .video-box {
+            width: min(950px, 100%);
+
+            text-align: center;
+
+            animation: fadeDown 1s ease;
+        }
+
+        .video-title {
+            font-family: Georgia, serif;
+
+            font-size: clamp(38px, 6vw, 65px);
+
+            font-weight: 500;
+
+            color: #8f3657;
+
+            margin-bottom: 10px;
+        }
+
+        .video-text {
+            color: #765b66;
+
+            font-size: 17px;
+
+            margin-bottom: 30px;
+        }
+
+        .video-wrapper {
+            width: 100%;
+
+            background: rgba(255, 255, 255, 0.75);
+
+            padding: 12px;
+
+            border-radius: 28px;
+
+            box-shadow:
+                0 25px 70px rgba(120, 50, 80, 0.20);
+
+            backdrop-filter: blur(12px);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+
+            max-height: 70vh;
+
+            display: block;
+
+            margin: auto;
+
+            border-radius: 20px;
+
+            background: #000;
+
+            object-fit: contain;
+        }
+
+        .back-button {
+            display: inline-block;
+
+            margin-top: 28px;
+
+            padding: 12px 24px;
+
+            border-radius: 50px;
+
+            background: rgba(255, 255, 255, 0.8);
+
+            color: #a33f62;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            box-shadow: 0 8px 25px rgba(120, 50, 80, 0.12);
+
+            transition: 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+
+            background: white;
+
+            box-shadow: 0 12px 30px rgba(120, 50, 80, 0.20);
+        }
+
+        @media (max-width: 600px) {
+
+            .video-page {
+                padding: 20px 12px;
+            }
+
+            .video-wrapper {
+                padding: 7px;
+
+                border-radius: 20px;
+            }
+
+            .video-wrapper video {
+                border-radius: 15px;
+
+                max-height: 65vh;
+            }
+
+            .video-text {
+                font-size: 15px;
+
+                margin-bottom: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="hearts"></div>
+
+    <main class="video-page">
+
+        <section class="video-box">
+
+            <h1 class="video-title">
+                Para ti mi amor 💘
+            </h1>
+
+            <p class="video-text">
+                Hice este pequeño video especialmente para ti.
+            </p>
+
+
+            <div class="video-wrapper">
+
+                <video controls playsinline>
+
+                    <source src="video/video.mp4" type="video/mp4">
+
+                    Tu navegador no puede reproducir este video.
+
+                </video>
+
+            </div>
+
+
+            <a href="index.html" class="back-button">
+                ← Volver a mis regalos
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
